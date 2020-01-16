@@ -15,8 +15,15 @@ namespace Pinger
 
     public static bool Ping()
     {
-      bool success;
-      return true;
+      bool success = true;
+      if (success)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
   }
 }
