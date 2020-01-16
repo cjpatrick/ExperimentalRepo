@@ -7,14 +7,20 @@ namespace Pinger
   {
     static void Main(string[] args)
     {
-      bool success = Ping("10.0.1.151");
-      if (success)
+      int i = 0;
+      while (i < 256)
       {
-        Console.Write("Success");
-      }
-      else
-      {
-        Console.WriteLine("Failure");
+        string ip = "10.0.1." + i;
+        bool success = Ping(ip);
+        if (success)
+        {
+          Console.Write("IP: " + ip + " pinged successfully \n");
+        }
+        else
+        {
+          Console.Write("IP: " + ip + " pinged unsuccessfully \n");
+        }
+        i++;
       }
     }
 
