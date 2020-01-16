@@ -6,7 +6,16 @@ namespace Pinger
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      bool success = Ping();
+      if (success)
+      {
+        Console.Write("Success");
+      }
+    }
+
+    public static bool Ping()
+    {
+      return true;
     }
   }
 }
