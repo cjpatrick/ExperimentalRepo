@@ -6,7 +6,7 @@ namespace Pinger
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      Console.WriteLine("Ping Successful");
     }
   }
 }
